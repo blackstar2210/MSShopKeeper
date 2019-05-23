@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Quản lý nhân viên</title>
+    <link href="/CSS/Common/main.css" rel="stylesheet" />
+    <link href="/CSS/View/employee.css" rel="stylesheet" />
+    <link href="/CSS/Library/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        Header
+    </div>
+
+    <div id="menu">
+        Menu
+    </div>
+
+    <div id="content">
+        <div id="main-content">
+            <div id="content-top">
+                <div class="toolbar-item">
+                    <div class="toolbar-icon toolbar-item-add"></div><div class="text">Thêm mới</div>
+                </div>
+                <div class="boder"></div>
+                <div class="toolbar-item">
+                    <div class="toolbar-icon toolbar-item-duplicate"></div><div class="text">Nhân bản</div>
+                </div>
+                <div class="boder"></div>
+                <div class="toolbar-item">
+                    <div class="toolbar-icon toolbar-item-edit"></div><div class="text">Sửa</div>
+                </div>
+                <div class="boder"></div>
+                <div class="toolbar-item">
+                    <div class="toolbar-icon toolbar-item-delete"></div><div class="text">Xóa</div>
+                </div>
+                <div class="boder"></div>
+                <div class="toolbar-item">
+                    <div class="toolbar-icon toolbar-item-load"></div><div class="text" v>Nạp</div>
+                </div>
+
+            </div>
+
+            <div id="content-mid">
+                <div class="tblEmployee">
+                    <table style="width: 99%">
+                        <thead>
+                            <tr propertyInfo>
+                                <th fielName="EmployeeCode" width="12%">Mã nhân viên</th>
+                                <th fielName="EmployeeName" width="30%">Tên nhân viên</th>
+                                <th fielName="Dob" width="15%">Ngày sinh</th>
+                                <th fielName="Gender" width="12%">Giới tính</th>
+                                <th fielName="Phone" width="15%">Số điện thoại</th>
+                                <th fielName="WorkingStatus" width="calc(100%-84%)">Trạng thái làm việc</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tblItem">
+                    <table style="width: 100%">
+                        <tbody body></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bottom-table">
+
+                <div class="box-inner">
+                    <div class="icon icon-first"></div>
+                    <div class="icon icon-second"></div>
+                    <div class="text1">Trang</div>
+                    <div class="input">
+                        <input type="text" value="1" class="input-detail" />
+                    </div>
+                    <div class="text1">trên 1 </div>
+                    <div class="icon icon-three"></div>
+                    <div class="icon icon-four"></div>
+                    <div class="icon icon-five"></div>
+                    <div class="select">
+                        <select class="select">
+                            <option value="15">15</option>
+                            <option value="25">25</option>
+                            <option value="50" selected>50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text2"><p>Hiển thị 1 - 16 trên 16 kết quả</p></div>
+            </div>
+
+            <div id="content-bottom">
+                <div class="menu-top">
+                    <div class="item1">Vai trò</div>
+                    <div class="boder-menu-bottom"></div>
+                    <div class="item2">Thông tin liên hệ</div>
+                </div>
+
+                <div class="table-bottom">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th><div>Tên vai trò</div></th>
+                                <th><div>Diễn giải</div></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div>Quản lý cửa hàng</div></td>
+                                <td><div>Quản lý tất cả các hoạt động của cửa hàng</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/Scripts/Library/jquery-3.2.1.slim.min.js"></script>
+    <script src="/Scripts/Library/popper.min.js"></script>
+    <script src="/Scripts/Library/bootstrap.min.js"></script>
+    <script src="/Scripts/Common/Format.js"></script>
+    <script src="/Scripts/View/employee.js"></script>
+</body>
+</html>
