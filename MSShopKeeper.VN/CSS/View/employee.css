@@ -1,16 +1,6 @@
 ﻿* {
     font-size: 13px;
 }
-#header {
-    height: 52px;
-    right: auto;
-    left: 0px;
-    top: 0px;
-    margin: 0px;
-    width: 100%;
-    background-color: aqua;
-    border: 1px solid black;
-}
 
 #menu {
     width: 140px;
@@ -18,7 +8,6 @@
     top: 0;
     height: 885px;
     background-color: #026b97 !important;
-    border: 1px solid black;
 }
 
 #content {
@@ -40,7 +29,6 @@
     left: 0px;
     top: 0px;
     margin: 0px;
-    border: 1px solid black;
     height: 885px;
     width: 100%;
     background-color: #e5e6eb;
@@ -335,6 +323,7 @@ tr:nth-child(even) {
 
     .table-bottom td {
         border: 1px solid #808080;
+        text-align:left;
     }
 
         .table-bottom td:nth-child(1) {

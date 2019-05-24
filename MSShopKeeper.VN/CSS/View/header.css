@@ -1,0 +1,96 @@
+﻿#header {
+    height: 52px;
+    right: auto;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 140px;
+    height: 52px;
+    display: table-cell;
+    background-color: #006189;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12px;
+}
+
+.title {
+    text-align: center;
+    height: 52px;
+    overflow: hidden;
+}
+
+.title-label {
+    padding: 0px 0px 0px 21px;
+    right: auto;
+    left: 0px;
+    top: 18px;
+    margin: 0px;
+    font-size: 18px !important;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+.mid-title {
+    width: 82%;
+    height: 52px;
+    overflow: hidden;
+}
+
+.button-back {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    width: 210px;
+    height: 26px;
+    right: 520px;
+    top: 16px;
+    display: flex;
+}
+
+.icon-back {
+    background: url('/Contents/Icons/back.png') no-repeat 0 1px;
+    width: 20px;
+    line-height: 20px;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+
+.text-back {
+    color: #026b97;
+    font-weight: bold;
+    height: 20px !important;
+}
+
+.border-title {
+    position: absolute;
+    height: 20px;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    top: 16px;
+    border-left-color: #1882ae;
+    border-right-color: #1882ae;
+    right: 500px;
+}
+
+.selectbox {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    min-width: 162px;
+    height: 32px;
+    right: 300px;
+    top: 8px;
+    display: flex;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+

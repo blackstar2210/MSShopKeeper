@@ -80,10 +80,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contents\Icons\back.png" />
     <Content Include="Contents\Icons\common-icon.png" />
+    <Content Include="Contents\Images\logo-mshopkeeper.png" />
     <Content Include="CSS\Common\main.css" />
     <Content Include="CSS\Library\bootstrap.min.css" />
     <Content Include="CSS\View\employee.css" />
+    <Content Include="CSS\View\header.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Common\Format.js" />
     <Content Include="Scripts\Library\bootstrap.min.js" />
@@ -112,7 +115,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Contents\Fonts\" />
-    <Folder Include="Contents\Images\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
