@@ -2,6 +2,38 @@
     //load dữ liệu
     //employeeJs.loadData();
     employeeJs = new employeeJs();
+
+    dialog = $('.dialogEmployeeDetail').dialog({
+        width: 600,
+        height: 200,
+        autoOpen: false,
+        closeOnEscape: false,
+        modal: true,
+        buttons: [
+            {
+                text: 'Thêm',
+                id: "btnAdd",
+                manhnv: 'sdfjklashdfjiasdfhjkasfhdk',
+                click: function () {
+                    alert('hello');
+                }
+            },
+            {
+                text: 'Sửa',
+                id: 'btnEdit'
+            },
+            {
+                text: 'Đóng',
+                click: function () {
+                    dialog.dialog('close');
+                }
+            },
+        ]
+    })
+    // Gán Events:
+    $('#btnAdd').click(function () {
+        dialog.dialog('open');
+    })
 });
 
 class base {

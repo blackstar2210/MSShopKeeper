@@ -1,0 +1,123 @@
+﻿.center-content-menu {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #004765;
+}
+
+    .center-content-menu .menu-item:hover {
+        background-color: #00577b;
+    }
+
+    .menu-item {
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        margin: 0 auto;
+        height: 40px;
+        color: #fff;
+        text-decoration: none;
+        -webkit-box-sizing: content-box;
+        background-color: #026b97;
+        cursor: pointer;
+    }
+
+.menu-icon {
+    position: absolute;
+    height: 38px;
+    left: 8px;
+    top: 2px;
+    width: 22px;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+}
+
+.icon-1 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 6px;
+}
+
+.icon-2 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -273px;
+}
+
+.icon-3 {
+    background-image: url('/Contents/Icons/ic_sogiaohang.png');
+    background-position: 4px 5px;
+}
+
+.icon-4 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -33px;
+}
+
+.icon-5 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -75px;
+}
+
+.icon-6 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -115px;
+}
+
+.icon-7 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: -2px -154px;
+}
+
+.icon-8 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -193px;
+}
+
+.icon-9 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -233px;
+}
+
+.icon-10 {
+    background-image: url('/Contents/Icons/Logo_meInvoice.svg');
+    background-position: center 4px;
+}
+
+.icon-11 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -313px;
+}
+
+.icon-12 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -383px;
+}
+
+.icon-13 {
+    background-image: url('/Contents/Icons/ic_ocm_logo.png');
+    background-position: 4px 5px;
+}
+
+.icon-14 {
+    background-image: url('/Contents/Icons/icon_5shop_white_24_1.png');
+    background-position: 0 3px;
+}
+
+.icon-15 {
+    background-image: url('/Contents/Icons/slibarmenu.png');
+    background-position: 0 -350px;
+}
+
+.bottom-content-menu .menu-item:hover {
+    background-color: #00577b;
+}
+
+.menu-text {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    left: 0;
+    bottom: 3px;
+    text-align: left;
+    padding-left: 40px;
+}

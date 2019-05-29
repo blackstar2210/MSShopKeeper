@@ -80,17 +80,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contents\Icons\arrow-down-line.png" />
     <Content Include="Contents\Icons\back.png" />
     <Content Include="Contents\Icons\common-icon.png" />
+    <Content Include="Contents\Icons\icon-help-18-hover.png" />
+    <Content Include="Contents\Icons\icon_5shop_white_24_1.png" />
+    <Content Include="Contents\Icons\ic_ocm_logo.png" />
+    <Content Include="Contents\Icons\ic_sogiaohang.png" />
+    <Content Include="Contents\Icons\Logo_meInvoice.svg" />
+    <Content Include="Contents\Icons\notify-18.png" />
+    <Content Include="Contents\Icons\slibarmenu.png" />
     <Content Include="Contents\Images\logo-mshopkeeper.png" />
     <Content Include="CSS\Common\main.css" />
     <Content Include="CSS\Library\bootstrap.min.css" />
+    <Content Include="CSS\Library\jquery-ui.css" />
     <Content Include="CSS\View\employee.css" />
     <Content Include="CSS\View\header.css" />
+    <Content Include="CSS\View\menu.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Common\Format.js" />
     <Content Include="Scripts\Library\bootstrap.min.js" />
     <Content Include="Scripts\Library\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\Library\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\Library\jquery-ui.min.js" />
     <Content Include="Scripts\Library\popper.min.js" />
     <Content Include="Scripts\View\employee.js" />
     <Content Include="Views\employee.html" />
