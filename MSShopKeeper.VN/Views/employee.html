@@ -3,18 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <title>Quản lý nhân viên</title>
-    <link href="/CSS/Common/main.css" rel="stylesheet" />
-    <link href="../CSS/View/header.css" rel="stylesheet" />
-    <link href="../CSS/View/menu.css" rel="stylesheet" />
-    <link href="/CSS/View/employee.css" rel="stylesheet" />
-    <link href="../CSS/Library/jquery-ui.css" rel="stylesheet" />
     <link href="/CSS/Library/bootstrap.min.css" rel="stylesheet" />
+    <link href="/CSS/Common/main.css" rel="stylesheet" />
+    <link href="/CSS/View/header.css" rel="stylesheet" />
+    <link href="/CSS/View/menu.css" rel="stylesheet" />
+    <link href="/CSS/View/employee.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery-ui.css" rel="stylesheet" />
+
 </head>
 <body>
     <div id="header">
         <div class="logo">
             <a href="#">
-                <img src="../Contents/Images/logo-mshopkeeper.png" style="width: 120px;" />
+                <img src="/Contents/Images/logo-mshopkeeper.png" style="width: 120px;" />
             </a>
         </div>
         <div class="title">
@@ -35,10 +36,14 @@
                 </div>
             </a>
             <div class="border-title"></div>
-            <div class="selectbox">
-                <div class="header-text">Thời trang MM Thành Công</div>
-                <div class="header-icon"></div>
+            <button class="selectbox" id="selectbox" onclick="showDropdown()">
+                <span class="header-text">Thời trang MM Thành Công</span>
+                <span class="header-icon"></span>
+            </button>
+            <div class="dropdown-selectbox">
+                <div>Thời trang MM Thành Công</div>
             </div>
+
             <div class="avata">
                 <div class="avata-image"></div>
                 <div class="avata-name">Cao Công Hân</div>
@@ -168,7 +173,7 @@
     <div id="content">
         <div id="main-content">
             <div id="content-top">
-                <div class="toolbar-item" id="btnAdd">
+                <div class="toolbar-item" id="btnAddLayout">
                     <div class="toolbar-icon toolbar-item-add"></div><div class="text">Thêm mới</div>
                 </div>
                 <div class="boder"></div>
@@ -185,7 +190,7 @@
                 </div>
                 <div class="boder"></div>
                 <div class="toolbar-item">
-                    <div class="toolbar-icon toolbar-item-load"></div><div class="text" v>Nạp</div>
+                    <div class="toolbar-icon toolbar-item-load"></div><div class="text">Nạp</div>
                 </div>
 
             </div>
@@ -264,6 +269,11 @@
             </div>
         </div>
     </div>
+    <div class="dropdown-selectbox" id="dropdown-selectbox">
+        <a href="#">Thời trang MM Thành Công</a>
+    </div>
+
+    <div></div>
 
     <div class="dialogEmployeeDetail">
         Mã khách hàng

@@ -13,17 +13,24 @@
             {
                 text: 'Thêm',
                 id: "btnAdd",
+                width: 50,
+                height: 25,
                 manhnv: 'sdfjklashdfjiasdfhjkasfhdk',
                 click: function () {
                     alert('hello');
                 }
             },
             {
+
+                width: 50,
+                height: 25,
                 text: 'Sửa',
                 id: 'btnEdit'
             },
             {
                 text: 'Đóng',
+                width: 60,
+                height: 25,
                 click: function () {
                     dialog.dialog('close');
                 }
@@ -31,7 +38,7 @@
         ]
     })
     // Gán Events:
-    $('#btnAdd').click(function () {
+    $('#btnAddLayout').click(function () {
         dialog.dialog('open');
     })
 });
@@ -124,6 +131,24 @@ function getData() {
     }
     return fakeData;
 }
+
+function showDropdown() {
+    document.getElementById("dropdown-selectbox").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.selectbox') && !event.target.matches('.header-text') && !event.target.matches('.header-icon')) {
+        var dropdowns = document.getElementsByClassName("dropdown-selectbox");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+};
 
 
 
