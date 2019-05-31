@@ -83,7 +83,10 @@
     <Content Include="Contents\Icons\arrow-down-line.png" />
     <Content Include="Contents\Icons\back.png" />
     <Content Include="Contents\Icons\common-icon.png" />
+    <Content Include="Contents\Icons\icon-change-password16.png" />
+    <Content Include="Contents\Icons\icon-feedback.png" />
     <Content Include="Contents\Icons\icon-help-18-hover.png" />
+    <Content Include="Contents\Icons\icon-logout16.png" />
     <Content Include="Contents\Icons\icon_5shop_white_24_1.png" />
     <Content Include="Contents\Icons\icon_help_18.png" />
     <Content Include="Contents\Icons\ic_ocm_logo.png" />

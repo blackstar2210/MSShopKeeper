@@ -59,16 +59,16 @@ class base {
                     rowHTML = rowHTML.append('<td width="12%">{0}</td>'.format(item[fielName]));
                 }
                 if (fielName === "EmployeeName") {
-                    rowHTML = rowHTML.append('<td width="30%">{0}</td>'.format(item[fielName]));
+                    rowHTML = rowHTML.append('<td width="52%">{0}</td>'.format(item[fielName]));
                 }
                 if (fielName === "Gender") {
-                    rowHTML = rowHTML.append('<td width="12%">{0}</td>'.format(item[fielName]));
+                    rowHTML = rowHTML.append('<td width="5%">{0}</td>'.format(item[fielName]));
                 }
                 if (fielName === "Dob") {
-                    rowHTML = rowHTML.append('<td width="15%">{0}</td>'.format(item[fielName]));
+                    rowHTML = rowHTML.append('<td width="10%">{0}</td>'.format(item[fielName]));
                 }
                 if (fielName === "Phone") {
-                    rowHTML = rowHTML.append('<td width="15%">{0}</td>'.format(item[fielName]));
+                    rowHTML = rowHTML.append('<td width="12%">{0}</td>'.format(item[fielName]));
                 }
                 if (fielName === "WorkingStatus") {
                     rowHTML = rowHTML.append('<td width="calc(100%-84%)">{0}</td>'.format(item[fielName]));
@@ -95,6 +95,17 @@ class employeeJs extends base {
         this.loadData();
     }
 }
+
+$("#text-filter").datepicker({
+    showOn: "button"
+});
+
+//$("#valueFilter-input-datepicker").datepicker({
+//    showOn: "button"
+//});
+$("#button-filter-date").on('click', function () {
+    $(this).prev().trigger('click');
+});
 
 
 //var employeeJs = {
@@ -136,6 +147,11 @@ function showDropdown() {
     document.getElementById("dropdown-selectbox").classList.toggle("show");
 }
 
+
+function dropdownAvata() {
+    document.getElementById("dropdown-avata").classList.toggle("show-1");
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
     if (!event.target.matches('.selectbox') && !event.target.matches('.header-text') && !event.target.matches('.header-icon')) {
@@ -148,8 +164,17 @@ window.onclick = function (event) {
             }
         }
     }
+    if (!event.target.matches('.avata') && !event.target.matches('.avata-image') && !event.target.matches('.avata-name') && !event.target.matches('.header-icon1')) {
+        var dropdown1s = document.getElementsByClassName("dropdown-avata");
+        var j;
+        for (j = 0; j < dropdown1s.length; j++) {
+            var openDropdown1 = dropdown1s[j];
+            if (openDropdown1.classList.contains('show-1')) {
+                openDropdown1.classList.remove('show-1');
+            }
+        }
+    }
 };
-
 
 
 

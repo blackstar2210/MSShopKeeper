@@ -18,10 +18,10 @@
                 <img src="/Contents/Images/logo-mshopkeeper.png" style="width: 120px;" />
             </a>
         </div>
-        <div class="title">
-            <div style="width: 105px;">
-                <label class="title-label">Nhân viên</label>
-            </div>
+        <div class="title" style="width: 105px;">
+
+            <label class="title-label">Nhân viên</label>
+
         </div>
 
         <div class="mid-title">
@@ -44,11 +44,11 @@
                 <div>Thời trang MM Thành Công</div>
             </div>
 
-            <div class="avata">
+            <button class="avata" id="avata" onclick="dropdownAvata()">
                 <div class="avata-image"></div>
                 <div class="avata-name">Cao Công Hân</div>
-                <div class="header-icon"></div>
-            </div>
+                <div class="header-icon header-icon1"></div>
+            </button>
         </div>
         <div class="notification">
             <div class="notyfy-icon"></div>
@@ -201,13 +201,72 @@
                         <thead>
                             <tr propertyInfo>
                                 <th fielName="EmployeeCode" width="12%">Mã nhân viên</th>
-                                <th fielName="EmployeeName" width="30%">Tên nhân viên</th>
-                                <th fielName="Dob" width="15%">Ngày sinh</th>
-                                <th fielName="Gender" width="12%">Giới tính</th>
-                                <th fielName="Phone" width="15%">Số điện thoại</th>
+                                <th fielName="EmployeeName" width="52%">Tên nhân viên</th>
+                                <th fielName="Dob" width="10%">Ngày sinh</th>
+                                <th fielName="Gender" width="5%">Giới tính</th>
+                                <th fielName="Phone" width="12%">Số điện thoại</th>
                                 <th fielName="WorkingStatus" width="calc(100%-84%)">Trạng thái làm việc</th>
                             </tr>
+                            <tr>
+                            </tr>
                         </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="row-filter">
+                                        <button class="button-filter" style="width:34px; height: 100%;"><span>*</span></button>
+                                        <div class="dropdown-filter">
+                                            <div class="filter-item"><a href="#"><span>*:Chứa</span></a></div>
+                                            <div class="filter-item"><a href="#"><span>=:Bằng</span></a></div>
+                                            <div class="filter-item"><a href="#"><span>+:Bắt đầu bằng</span></a></div>
+                                            <div class="filter-item"><a href="#"><span>-:Kết thúc băng</span></a></div>
+                                            <div class="filter-item"><a href="#"><span>!:Không chứa</span></a></div>
+                                        </div>
+                                        <input class="text-filter" style="width:170px; height: 100%;" type="text" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row-filter">
+                                        <button class="button-filter" style="width:34px; height: 100%;"><span>*</span></button>
+                                        <div class="dropdown-filter" style="display: none">
+
+                                        </div>
+                                        <input class="text-filter" style="width:865px; height: 100%;" type="text" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row-filter">
+                                        <button class="button-filter" style="width:34px; height: 100%; border-top: none"><span>=</span></button>
+                                        <div class="dropdown-filter" style="display: none">
+
+                                        </div>
+                                        <input class="text-filter" id="text-filter" style="width:110px; height: 100%; border-right: none; border-top: none;border-left:1px solid #c3c3c3; outline: none" type="text" />
+                                        <button class="button-filter-date" id="button-filter-date"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row-filter">
+                                        <input class="text-filter" style="width:55px; height: 100%; outline: none; border-top: none; border-right: none; border-left: none;" type="text" value="Tất cả" />
+                                        <button class="button-filter-gender"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row-filter">
+                                        <button class="button-filter" style="width:34px; height: 100%;"><span>*</span></button>
+                                        <div class="dropdown-filter" style="display: none">
+
+                                        </div>
+                                        <input class="text-filter" style="width:170px; height: 100%;" type="text" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row-filter">
+                                        <input class="text-filter" style="width:125px; height: 100%; outline: none; border-top: none; border-right: none; border-left: none;" type="text" value="Chính thức" />
+                                        <button class="button-filter-gender"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="tblItem">
@@ -230,7 +289,7 @@
                     <div class="icon icon-three"></div>
                     <div class="icon icon-four"></div>
                     <div class="icon icon-five"></div>
-                    <div class="select">
+                    <div>
                         <select class="select">
                             <option value="15">15</option>
                             <option value="25">25</option>
@@ -269,8 +328,19 @@
             </div>
         </div>
     </div>
+
     <div class="dropdown-selectbox" id="dropdown-selectbox">
         <a href="#">Thời trang MM Thành Công</a>
+    </div>
+
+    <div class="dropdown-avata" id="dropdown-avata">
+        <div class="avata-item"><a class="item-icon1" href="#"><span class="text-avata">Thay đổi mật khẩu</span></a></div>
+        <div class="avata-item"><a class="item-icon2" href="#"><span class="text-avata">Góp ý với nhà phát triển</span></a></div>
+        <div class="avata-item"><a class="item-icon3" href="#"><span class="text-avata">Đăng xuất</span></a></div>
+    </div>
+
+    <div class="dropdown-user">
+
     </div>
 
     <div></div>

@@ -9,7 +9,7 @@
 }
 
 .logo {
-    width: 140px;
+    min-width: 140px;
     height: 52px;
     display: table-cell;
     background-color: #006189;
@@ -27,7 +27,6 @@
 }
 
 .title-label {
-    padding: 0px 0px 0px 21px;
     right: auto;
     left: 0px;
     top: 18px;
@@ -130,9 +129,7 @@ button:focus {
             color: #026b97;
         }
 
-.show {
-    display: block;
-}
+
 
 .header-text {
     padding-top: 6px;
@@ -156,13 +153,70 @@ button:focus {
     margin: 0px;
     min-width: 140px;
     height: 32px;
-    right: 120px;
+    right: 110px;
     top: 8px;
     display: flex;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     cursor: pointer;
+    background-color: white;
+    border: none;
+    margin-left: 4px;
 }
+
+.dropdown-avata {
+    background-color: white;
+    position: absolute;
+    top: 42px;
+    right: 110px;
+    border: 1px solid #c3c3c3;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #212121;
+    font-weight: 600;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.show-1 {
+    display: block;
+}
+
+.item-icon1 {
+    background: url('/Contents/Icons/icon-change-password16.png') no-repeat 12px center;
+}
+
+.item-icon2 {
+    background: url('/Contents/Icons/icon-feedback.png') no-repeat 12px center;
+}
+
+.item-icon3 {
+    background: url('/Contents/Icons/icon-logout16.png') no-repeat 12px center;
+}
+
+.text-avata {
+    margin-left: 36px;
+}
+
+.avata-item {
+    margin: 0;
+    width: 182px;
+    border-bottom: 1px solid #c3c3c3;
+    height: 33px;
+    line-height: 33px;
+}
+
+    .dropdown-avata a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .dropdown-avata a:hover {
+            color: #026b97;
+        }
 
 .avata-image {
     background-image: url("https://demoquanao.mshopkeeper.vn/backendg1/api/Image?id=&type=0&w=50&h=50&CompanyCode=demoquanao");
@@ -184,6 +238,7 @@ button:focus {
     height: 36px;
     background-color: white;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .notyfy-icon {
@@ -208,6 +263,7 @@ button:focus {
     height: 36px;
     background-color: white;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .help-icon {
