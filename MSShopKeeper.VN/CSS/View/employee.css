@@ -96,6 +96,10 @@
         border-left: none;
     }
 
+.tblItem tr:hover {
+    background-color: rgb(234,239,244);
+}
+
 table, th, td {
     border-collapse: collapse;
     padding: 7px 10px 6px;
@@ -134,7 +138,7 @@ table, th, td {
 
 .button-filter-date {
     background-color: #fff;
-    position:relative;
+    position: relative;
     width: 24px;
     border: none;
     background: url('/Contents/Icons/common-icon.png') no-repeat 0 -169px;
@@ -142,16 +146,15 @@ table, th, td {
 
 .button-filter-gender {
     background-color: #fff;
+    cursor:pointer;
     width: 24px;
     border: none;
-    background: url('../../Contents/Icons/arrow-down-line.png') no-repeat 12px 15px;
+    background: url('/Contents/Icons/arrow-down-line.png') no-repeat 12px 15px;
 }
 
 .dropdown-filter {
     background-color: #fff;
     position: absolute;
-    top: 32px;
-    left: 2px;
     display: block;
     height: 160px;
     width: 122px;
@@ -159,6 +162,17 @@ table, th, td {
     text-decoration: none;
     text-align: left;
     box-shadow: rgb(136, 136, 136) 0px 0px 6px;
+    display: none;
+}
+
+.dropdown-filter1 {
+    top: 32px;
+    left: 2px;
+}
+
+.dropdown-filter2 {
+    top: 32px;
+    left: 4px;
 }
 
     .dropdown-filter a {

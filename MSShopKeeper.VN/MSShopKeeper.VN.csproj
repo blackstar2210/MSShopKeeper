@@ -103,9 +103,11 @@
     <Content Include="Contents\Images\ui-icons_777777_256x240.png" />
     <Content Include="Contents\Images\ui-icons_cc0000_256x240.png" />
     <Content Include="Contents\Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CSS\Common\datepicker-custom.css" />
     <Content Include="CSS\Common\main.css" />
     <Content Include="CSS\Library\bootstrap.min.css" />
     <Content Include="CSS\Library\jquery-ui.css" />
+    <Content Include="CSS\View\dialog.css" />
     <Content Include="CSS\View\employee.css" />
     <Content Include="CSS\View\header.css" />
     <Content Include="CSS\View\menu.css" />

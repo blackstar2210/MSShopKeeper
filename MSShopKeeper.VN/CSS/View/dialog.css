@@ -1,0 +1,164 @@
+﻿.ui-dialog .ui-dialog-titlebar-close {
+    background: url('/Contents/Icons/common-icon.png') no-repeat -1127px -127px;
+    border: none;
+    background-color: rgb(240,240,240);
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    height: 40px;
+    padding: 10px 14px 10px 14px;
+    background-color: rgb(240,240,240);
+}
+
+.ui-dialog .ui-dialog-title {
+    font: 700 16px "Roboto" !important;
+    color: #212121;
+}
+
+.ui-dialog .ui-dialog-content {
+    padding: 0;
+}
+
+.dialogEmployeeDetail {
+    padding: 0;
+}
+
+.header-dialog {
+    display: flex;
+    width: 100%;
+    height: 38px;
+}
+
+.header-item {
+    padding: 8px 10px;
+    color: #737373;
+    font-weight: 600;
+}
+
+.header-item-selected {
+    color: #026b97;
+    border-bottom: 2px solid #026b97;
+}
+
+.border-dialog {
+    background-color: #e1e1e1;
+    width: 1px;
+    height: 28px;
+    margin-top: 4px;
+}
+
+.content-dialog {
+    width: 100%;
+    height: 600px;
+    padding: 12px 12px 0 12px;
+}
+
+.row-top{
+    width: 100%;
+    height: 166px;
+    display: flex;
+}
+
+.code-name {
+    width: 392px;
+    height: 166px;
+}
+
+.code {
+    display: flex;
+    width: 100%;
+    height:35px;
+}
+
+.code-text {
+    padding: 8px 5px 0 0;
+    width: 150px;
+}
+
+.code-input {
+    padding: 5px 10px 4px 10px;
+    width:235px;
+    outline: none;
+}
+
+.label-code {
+    font: 300 13px Roboto !important;
+    font-style: italic !important;
+    width: 235px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 4px;
+}
+
+.image-text {
+    width: 230px;
+    padding-top: 8px;
+    padding-left:5px;
+}
+
+.label-image {
+    font: 300 13px Roboto !important;
+    font-style: italic !important;
+    height: 30px;
+    width: 100%;
+}
+
+.image {
+    width: 150px;
+    height: 160px;
+    border: 1px dashed #5fa2dd;
+    -webkit-border-radius: 3px;
+    margin-left: 18px;
+}
+
+.icon-image {
+    width:100%;
+    height:116px;
+}
+
+.button-image {
+    width: 40px;
+    height: 24px;
+    background-color: #026b97;
+    text-align: center;
+    font-family: Roboto !important;
+    color: #fff;
+    font-weight: 600;
+    -webkit-border-radius: 3px;
+    border: none;
+    margin-left: 56px;
+    margin-top: 15px;
+}
+
+.role {
+    height: 37px;
+    width:100%;
+    display: flex;
+}
+
+.role-text {
+    width: 150px;
+    height:100%;
+    padding: 8px 5px 0 0;
+    border: none;
+    outline: none;
+}
+
+.multi-select{
+    display: flex;
+    width: 627px;
+    height: 37px;
+
+}
+
+.role-select {
+    display: flex;
+    width: 570px;
+}
+
+.input-select {
+    height: 35px;
+    padding: 2px 5px;
+    /*border: none;*/
+    outline: none;
+}
