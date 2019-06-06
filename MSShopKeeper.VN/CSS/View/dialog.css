@@ -77,8 +77,12 @@
 
 .code-input {
     padding: 5px 10px 4px 10px;
-    width:235px;
+    width: 235px;
     outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    -webkit-border-radius: 3px;
 }
 
 .label-code {
@@ -144,21 +148,331 @@
     outline: none;
 }
 
-.multi-select{
+.multi-select {
     display: flex;
-    width: 627px;
-    height: 37px;
-
+    width: 640px;
+    min-height: 37px;
+    border: 1px solid #d0d0d0;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    padding:0 0 0 5px;
 }
 
 .role-select {
     display: flex;
-    width: 570px;
+    width: 585px;
+    /*width: 555px;*/ 
+    min-height: 35px;
+
 }
 
 .input-select {
-    height: 35px;
+    height: 100%;
     padding: 2px 5px;
-    /*border: none;*/
+    width: auto;
+    border: none;
     outline: none;
 }
+
+.select-icon1 {
+    width: 24px;
+    height: 35px;
+    background-color: #fff;
+    background-image: url('/Contents/Icons/arrow-down-line.png');
+    background-repeat: no-repeat;
+    background-position: 10px 16px;
+}
+
+.select-icon2 {
+    width: 24px;
+    height: 35px;
+    background-color: #f5f5f5;
+    color: #919191;
+    padding: 5px 8px;
+    font-weight: 600;
+}
+
+.select-warn {
+    width: 26px;
+    height: 37px;
+    background-color: #fff;
+    background-image: url('/Contents/Icons/exclamation.png');
+    background-repeat: no-repeat;
+    background-position: 4px 10px;
+    display:none;
+}
+
+.selected {
+    height:31px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type:none;
+    width: auto;
+}
+
+    .selected li {
+        height:24px;
+        background-color: #026b97;
+        color: #fff;
+        margin: 5px 3px 0 0;
+        border: 1px solid #ececec;
+        -webkit-border-radius: 3px;
+        position:relative;
+        padding: 2px 5px;
+        display:flex;
+    }
+
+.icon-close {
+    width: 12px;
+    height: 22px;
+    background-image: url('/Contents/Icons/icon-delete.png');
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    cursor: pointer;
+}
+
+.dropdown-select {
+    width: 640px;
+    height: 290px;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 1900;
+    -webkit-border-radius: 3px;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    position: absolute;
+    left: 163px;
+    top: 253px;
+    display: none;
+}
+
+    .dropdown-select ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-select ul li {
+        padding: 0 6px;
+        font: normal 13px Roboto;
+        line-height: 22px;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: none;
+        border-color: #fff;
+    }
+        .dropdown-select ul li:hover {
+            background-color: #247ba0;
+            color: #fff;
+        }
+
+
+.allow {
+    width: 100%;
+    height: 32px;
+    margin-top: 4px;
+    padding-left: 150px;
+    padding-top:8px;
+    display: flex;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right:4px;
+    background-image: url('/Contents/Icons/check.png');
+}
+
+.user {
+    width: 100%;
+    height: 35px;
+    margin-top: 8px;
+    display:flex;
+}
+
+.text-pass {
+    width: 150px;
+    padding: 8px 5px 0 0;
+}
+
+.pass {
+    width: 235px;
+    min-height: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    -webkit-border-radius: 3px;
+    display: flex;
+}
+
+.input-pass {
+    width: 203px;
+    padding: 5px 10px;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.icon-seen {
+    width: 30px;
+    height: 100%;
+    color: #919191;
+    background-image: url('/Contents/Icons/show_password.png');
+    background-repeat: no-repeat;
+    background-position: 3px;
+}
+
+.text-confirm {
+    width: 120px;
+    height: 100%;
+    padding: 8px 5px 0 0;
+    margin-left: 15px;
+}
+
+.input-confirm {
+    width: 270px;
+    padding: 5px 10px;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    -webkit-border-radius: 3px;
+    outline: none;
+}
+
+.evaluate-pass {
+    width:233px; 
+    height: 21px;
+    color: #f44336;
+    border-bottom: 4px solid #f44336;
+    margin-left: 150px;
+    display: none;
+}
+
+.rowID {
+    width: 100%;
+    height: 35px;
+    margin-top: 8px;
+    display: flex;
+}
+
+.input-id {
+    width: 235px;
+    padding: 5px 10px;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    -webkit-border-radius: 3px;
+    outline: none;
+}
+
+.date {
+    width: 270px;
+    min-height: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    -webkit-border-radius: 3px;
+    display: flex;
+    cursor: pointer;
+}
+
+.input-date {
+    width: 240px;
+    padding: 5px 10px;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.select-status {
+    width: 235px;
+    min-height: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    -webkit-border-radius: 3px;
+    display: flex;
+    cursor: pointer;
+}
+
+.input-status {
+    width: 205px;
+    padding: 5px 10px;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #404040;
+}
+
+.select-icon-status {
+    width: 24px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url('/Contents/Icons/arrow-down-line.png');
+    background-repeat: no-repeat;
+    background-position: 10px 16px;
+}
+
+.dropdown-select-status {
+    width: 235px;
+    height: 44px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    position: absolute;
+    left: 162px;
+    top: 460px;
+    display: none;
+}
+
+    .dropdown-select-status ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+        .dropdown-select-status ul li {
+            padding: 0 6px;
+            font: normal 13px Roboto;
+            line-height: 22px;
+            cursor: pointer;
+            border-width: 1px;
+            border-style: none;
+            border-color: #fff;
+        }
+
+            .dropdown-select-status ul li:hover {
+                background-color: #247ba0;
+                color: #fff;
+            }
+
+.marriage {
+    width: 235px;
+    height: 32px;
+    display: flex;
+}
+
+.option {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.text-marriage {
+    font-family: Roboto !important;
+    margin-left: 6px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.button-radio {
+    width: 18px;
+    height: 18px;
+    /*background-image: url('/Contents/Icons/radio-check.png');
+    background-repeat: no-repeat*/
+}
+

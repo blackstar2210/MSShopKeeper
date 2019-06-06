@@ -425,42 +425,92 @@
                 <div class="role-text">Vai trò</div>
                 <div class="multi-select">
                     <div class="role-select">
-                        <ul></ul>
-                        <input class="input-select" type="text" />
+                        <ul class="selected"></ul>
+                        <input class="input-select" type="text" placeholder="Chọn 1 hoặc nhiều vai trò" />
                     </div>
                     <div class="select-icon1"></div>
-                    <div class="select-icon2"></div>
+                    <div class="select-icon2">...</div>
                 </div>
+                <div class="dropdown-select">
+                    <ul>
+                        <li class="item-select">Nhân viên bán hàng</li>
+                        <li class="item-select">Nhân viên bán hàng online</li>
+                        <li class="item-select">Nhân viên marketing</li>
+                        <li class="item-select">Thu ngân</li>
+                        <li class="item-select">Thu ngân kiêm điều chuyển</li>
+                        <li class="item-select">Điều chỉnh giá bán</li>
+                        <li class="item-select">Kế toán</li>
+                        <li class="item-select">Mua hàng</li>
+                        <li class="item-select">Quản lý bán hàng online</li>
+                        <li class="item-select">Quản lý hàng hóa</li>
+                        <li class="item-select">Quản lý tem mã</li>
+                        <li class="item-select">Quản lý kho</li>
+                        <li class="item-select">Quản lý tiền mặt</li>
+                        <li class="item-select">Quản lý chi phí</li>
+                        <li class="item-select">Quản lý kết quả kinh doanh</li>
+                        <li class="item-select">Quản lý khuyến mại</li>
+                        <li class="item-select">Quản lý tiền gửi</li>
+                    </ul>
+                </div>
+                <div class="select-warn"></div>
             </div>
             <div class="allow">
-
+                <div class="checkbox"></div>
+                <span>Cho phép làm việc với phần mềm</span>
             </div>
-            <div class="password">
-
+            <div class="user">
+                <div class="text-pass">Mật khẩu <span style="color: red">*</span></div>
+                <div class="pass">
+                    <input class="input-pass" type="password" placeholder="Ít nhất 8 ký tự" />
+                    <div class="icon-seen"></div>
+                </div>
+                <div class="text-confirm">Xác nhận MK <span style="color:red">*</span></div>
+                <input class="input-confirm" type="password" />
             </div>
-            <div class="confirm-pasword">
-
+            <label class="evaluate-pass">Bảo mật yếu</label>
+            <div class="rowID">
+                <div class="text-id text-pass">Số CMND</div>
+                <input type="text" class="input-id" />
+                <div class="text-date text-confirm">Ngày cấp</div>
+                <div class="date">
+                    <input type="text" class="input-date" />
+                    <button class="button-filter-date" id="button-filter-date"></button>
+                </div>
             </div>
-            <div class="cmnn">
-
+            <div class="rowID">
+                <div class="text-address text-pass">Nơi cấp CMND</div>
+                <input class="input-address input-id" type="text" />
+                <div class="text-dob text-confirm">Ngày sinh</div>
+                <div class="date">
+                    <input type="text" class="input-date" />
+                    <button class="button-filter-date" id="button-filter-date"></button>
+                </div>
             </div>
-            <div class="dateID">
-
+            <div class="rowID">
+                <div class="text-status text-pass">Trạng thái làm việc</div>
+                <div class="select-status">
+                    <input type="text" class="input-status" value="Thử việc"/>
+                    <div class="select-icon-status"></div>
+                </div>
+                <div class="dropdown-select-status">
+                    <ul>
+                        <li class="item-select-status">Thử việc</li>
+                        <li class="item-select-status">Chính thức</li>
+                    </ul>
+                </div>
+                <div class="text-phone text-confirm">ĐT di động</div>
+                <input class="input-phone input-confirm" type="password" />
             </div>
-            <div class="addressId">
-
-            </div>
-            <div class="dob">
-
-            </div>
-            <div class="status">
-
-            </div>
-            <div class="phone">
-
-            </div>
-            <div class="marriage">
-
+            <div class="rowID">
+                <div class="text-marriage text-pass">Tình trạng hôn nhân</div>
+                <div class="marriage">
+                    <div class="option">
+                        <input class="button-radio" type="radio" name="marriage" value="Độc thân" checked><label class="text-marriage">Độc thân</label><br>
+                    </div>
+                    <div class="option">
+                        <input class="button-radio" type="radio" name="marriage" value="Đã kết hôn"><label class="text-marriage">Đã kết hôn</label><br>
+                    </div>
+                </div>
             </div>
             <div class="gender">
 

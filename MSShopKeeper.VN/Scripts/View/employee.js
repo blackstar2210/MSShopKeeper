@@ -168,6 +168,12 @@ class employeeJs extends base {
         $('.button-filter').on('click', this.showFilterMenu);
         $('.filter-item').on('click', this.changeCurrentFilter);
         $('.rowData').on('click', this.changeBackground);
+        $('.multi-select').on('click', this.showMenuSelect);
+        $('.select-icon-status').on('click', this.showMenuStatus);
+        $('.item-select').on('click', this.selectItem);
+        $(document).on('click', '.icon-close', this.deleteSelectedItem);
+        //$('.icon-close').on('click', this.deleteSelectedItem);
+        //$('.pass').on('click', this.changeColorInput);
         $(document).on('click', this.hideAllDropDown);
     }
 
@@ -194,6 +200,14 @@ class employeeJs extends base {
             $('.dropdown-filter').hide();
             // showFilter = 0;
         }
+        if (target.parents('.role').length === 0) {
+            $('.dropdown-select').hide();
+            // showFilter = 0;
+        }
+        if (target.parents('.select-status').length === 0) {
+            $('.dropdown-select-status').hide();
+            // showFilter = 0;
+        }
     }
 
     //Thay đổi giá trị hiện tại của button filter
@@ -211,6 +225,37 @@ class employeeJs extends base {
     changeBackground() {
         $(this).css('background-color', 'rgb(195,236,255)');
         $('.rowData').not($(this)).css('background-color', '');
+    }
+
+    //Hiển thị dropdown mutil select trong dialog
+    showMenuSelect() {
+        var menuContainer = $(this).parents('.role');
+        var currentMenu = menuContainer.find('.dropdown-select');
+        currentMenu.toggle();
+    }
+
+    //Chọn 1 item trong menu dropdown dialog
+    selectItem() {
+        var value = $(this).text();
+        var rowHTML = '<li><div>' + value + '</div><div class="icon-close"></div></li>';
+        $('.selected').append(rowHTML);
+    }
+
+    //Xóa item selected khi click vào button x
+    deleteSelectedItem() {
+        $(this).parent().remove();  
+    }
+
+    //Đổi màu border input
+    //changeColorInput() {
+
+    //}
+
+    //Hiển thị menu status khi click button
+    showMenuStatus() {
+        var menuContainer = $(this).parents('.rowID');
+        var currentMenu = menuContainer.find('.dropdown-select-status');
+        currentMenu.toggle();
     }
 
 }

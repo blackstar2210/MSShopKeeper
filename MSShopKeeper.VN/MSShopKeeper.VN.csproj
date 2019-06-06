@@ -82,8 +82,12 @@
   <ItemGroup>
     <Content Include="Contents\Icons\arrow-down-line.png" />
     <Content Include="Contents\Icons\back.png" />
+    <Content Include="Contents\Icons\check.png" />
     <Content Include="Contents\Icons\common-icon.png" />
+    <Content Include="Contents\Icons\exclamation.png" />
+    <Content Include="Contents\Icons\hide_password.png" />
     <Content Include="Contents\Icons\icon-change-password16.png" />
+    <Content Include="Contents\Icons\icon-delete.png" />
     <Content Include="Contents\Icons\icon-feedback.png" />
     <Content Include="Contents\Icons\icon-help-18-hover.png" />
     <Content Include="Contents\Icons\icon-logout16.png" />
@@ -94,8 +98,12 @@
     <Content Include="Contents\Icons\Logo_meInvoice.svg" />
     <Content Include="Contents\Icons\notify-18.png" />
     <Content Include="Contents\Icons\notify-hover-18.png" />
+    <Content Include="Contents\Icons\radio-check.png" />
+    <Content Include="Contents\Icons\radio-uncheck.png" />
+    <Content Include="Contents\Icons\show_password.png" />
     <Content Include="Contents\Icons\slibarmenu.png" />
     <Content Include="Contents\Icons\ui-icons_444444_256x240.png" />
+    <Content Include="Contents\Icons\uncheck.png" />
     <Content Include="Contents\Images\logo-mshopkeeper.png" />
     <Content Include="Contents\Images\ui-icons_444444_256x240.png" />
     <Content Include="Contents\Images\ui-icons_555555_256x240.png" />
