@@ -5,6 +5,8 @@
 //showFilter5 = 0;
 //showFilter6 = 0;
 showFilter = 0;
+countAllow = 0;
+countItem = 0;
 $(document).ready(function () {
     //load dữ liệu
     //employeeJs.loadData();
@@ -174,6 +176,10 @@ class employeeJs extends base {
         $(document).on('click', '.icon-close', this.deleteSelectedItem);
         //$('.icon-close').on('click', this.deleteSelectedItem);
         //$('.pass').on('click', this.changeColorInput);
+        $('.change-border-input').on('click', this.changeBoderInput);
+        $('.checkbox').on('click', this.handleButtonAllow);
+        $('.icon-seen').on('click', this.handleSeen);
+        $('.select-status').on('click', this.showDropdownStatus);
         $(document).on('click', this.hideAllDropDown);
     }
 
@@ -208,6 +214,11 @@ class employeeJs extends base {
             $('.dropdown-select-status').hide();
             // showFilter = 0;
         }
+
+        if (target.parents('.border-input').length === 0) {
+            $('.change-border-input').css('border', '');
+            // showFilter = 0;
+        }
     }
 
     //Thay đổi giá trị hiện tại của button filter
@@ -238,12 +249,37 @@ class employeeJs extends base {
     selectItem() {
         var value = $(this).text();
         var rowHTML = '<li><div>' + value + '</div><div class="icon-close"></div></li>';
-        $('.selected').append(rowHTML);
+        $(rowHTML).insertBefore($('.selected .last'));
+        countItem++;
+        var container = $(this).parents('.role');
+        var input = container.find('.input-select');
+        input.attr('placeholder', ' ');
+        var height = $('.role-select').height();
+        var top = 253;
+        if (height > 35) {
+
+            var increase = height - 35;
+            var newTop = 261 + increase;
+            $('.dropdown-select').css('top',newTop);
+        }
+        // $('.selected').insertBefore()
+        // $('.selected').append(rowHTML);
     }
 
     //Xóa item selected khi click vào button x
     deleteSelectedItem() {
-        $(this).parent().remove();  
+        var heightBefore = $('.role-select').height();
+        $(this).parent().remove();
+        countItem--;
+        if (countItem === 0) {
+            $('.input-select').attr('placeholder', 'Chọn 1 hoặc nhiều vai trò');
+        }
+        var heightAfter = $('.role-select').height();
+        if (heightAfter < heightBefore) {
+            var decrease = heightAfter - 35;
+            var newTop = 261 + decrease;
+            $('.dropdown-select').css('top', newTop);
+        }
     }
 
     //Đổi màu border input
@@ -256,6 +292,38 @@ class employeeJs extends base {
         var menuContainer = $(this).parents('.rowID');
         var currentMenu = menuContainer.find('.dropdown-select-status');
         currentMenu.toggle();
+    }
+
+    changeBoderInput() {
+        $(this).css('border', '1px solid #247ba0');
+        $('.change-border-input').not($(this)).css('border', '');
+    }
+
+    handleButtonAllow() {
+        if (countAllow === 0) {
+            $(this).css("background-image", "url('/Contents/Icons/uncheck.png')");
+            countAllow = 1;
+        }
+        else {
+            $(this).css("background-image", "url('/Contents/Icons/check.png')");
+            countAllow = 0;
+        }
+        $('.user').toggle();
+    }
+
+    handleSeen() {
+        var container = $(this).parents('.pass');
+        var pass = container.find('.input-pass');
+        //pass.attr('type', 'text');
+        if ('password' === pass.attr('type')) {
+            pass.attr('type', 'text');
+        } else {
+            pass.attr('type', 'password');
+        }
+    }
+
+    showDropdownStatus() {
+
     }
 
 }

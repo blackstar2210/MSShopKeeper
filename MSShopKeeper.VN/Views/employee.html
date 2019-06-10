@@ -385,7 +385,7 @@
     </div>
 
     <!-- Tạo Dialog-->
-    <div class="dialogEmployeeDetail" title="Thêm mới nhân viên">
+    <div class="dialogEmployeeDetail disable-bracken" title="Thêm mới nhân viên">
         <div class="header-dialog">
             <div class="header-item header-item-selected">Thông tin cơ bản</div>
             <div class="border-dialog"></div>
@@ -399,14 +399,14 @@
         <div class="content-dialog">
             <div class="row-top">
                 <div class="code-name">
-                    <div class="code">
+                    <div class="code border-input">
                         <div class="code-text">Mã nhân viên <span style="color:red">*</span></div>
-                        <input class="code-input" type="text" value="NV00003">
+                        <input class="code-input input-code change-border-input" type="text" value="NV00003">
                     </div>
-                    <label class="label-code">Dùng làm tên đăng nhập vào hệ thống, có thể sử dụng số điện thoại hoặc email</label>
-                    <div class="name code">
+                    <label class="label-code border-input">Dùng làm tên đăng nhập vào hệ thống, có thể sử dụng số điện thoại hoặc email</label>
+                    <div class="name code border-input">
                         <div class="code-text">Tên nhân viên <span style="color:red">*</span></div>
-                        <input class="code-input" type="text">
+                        <input class="code-input input-name change-border-input" type="text">
                     </div>
                 </div>
 
@@ -421,12 +421,15 @@
                     <button class="button-image">...</button>
                 </div>
             </div>
-            <div class="role">
+            <div class="role border-input">
                 <div class="role-text">Vai trò</div>
-                <div class="multi-select">
+                <div class="multi-select change-border-input">
                     <div class="role-select">
-                        <ul class="selected"></ul>
-                        <input class="input-select" type="text" placeholder="Chọn 1 hoặc nhiều vai trò" />
+                        <ul class="selected">
+                            <li class="last" style="padding:0; border: none;">
+                                <input class="input-select" type="text" placeholder="Chọn 1 hoặc nhiều vai trò" />
+                            </li>
+                        </ul>
                     </div>
                     <div class="select-icon1"></div>
                     <div class="select-icon2">...</div>
@@ -458,37 +461,37 @@
                 <div class="checkbox"></div>
                 <span>Cho phép làm việc với phần mềm</span>
             </div>
-            <div class="user">
+            <div class="user border-input">
                 <div class="text-pass">Mật khẩu <span style="color: red">*</span></div>
-                <div class="pass">
+                <div class="pass change-border-input">
                     <input class="input-pass" type="password" placeholder="Ít nhất 8 ký tự" />
-                    <div class="icon-seen"></div>
+                    <div class="icon-seen" style="cursor: pointer;"></div>
                 </div>
                 <div class="text-confirm">Xác nhận MK <span style="color:red">*</span></div>
-                <input class="input-confirm" type="password" />
+                <input class="input-confirm change-border-input" type="password" />
             </div>
             <label class="evaluate-pass">Bảo mật yếu</label>
-            <div class="rowID">
+            <div class="rowID border-input">
                 <div class="text-id text-pass">Số CMND</div>
-                <input type="text" class="input-id" />
+                <input type="text" class="input-id  change-border-input" />
                 <div class="text-date text-confirm">Ngày cấp</div>
-                <div class="date">
+                <div class="date change-border-input">
                     <input type="text" class="input-date" />
                     <button class="button-filter-date" id="button-filter-date"></button>
                 </div>
             </div>
-            <div class="rowID">
+            <div class="rowID border-input">
                 <div class="text-address text-pass">Nơi cấp CMND</div>
-                <input class="input-address input-id" type="text" />
+                <input class="input-address input-id change-border-input" type="text" />
                 <div class="text-dob text-confirm">Ngày sinh</div>
-                <div class="date">
+                <div class="date change-border-input">
                     <input type="text" class="input-date" />
                     <button class="button-filter-date" id="button-filter-date"></button>
                 </div>
             </div>
-            <div class="rowID">
+            <div class="rowID border-input">
                 <div class="text-status text-pass">Trạng thái làm việc</div>
-                <div class="select-status">
+                <div class="select-status change-border-input">
                     <input type="text" class="input-status" value="Thử việc"/>
                     <div class="select-icon-status"></div>
                 </div>
@@ -499,16 +502,22 @@
                     </ul>
                 </div>
                 <div class="text-phone text-confirm">ĐT di động</div>
-                <input class="input-phone input-confirm" type="password" />
+                <input class="input-phone input-confirm change-border-input" type="password" />
             </div>
             <div class="rowID">
-                <div class="text-marriage text-pass">Tình trạng hôn nhân</div>
+                <div class="text-marriage-title text-pass">Tình trạng hôn nhân</div>
                 <div class="marriage">
                     <div class="option">
-                        <input class="button-radio" type="radio" name="marriage" value="Độc thân" checked><label class="text-marriage">Độc thân</label><br>
+                        <div class="css-radio-button-checked">
+                            <input class="button-radio" type="radio" name="marriage" value="Độc thân" checked>
+                        </div>
+                        <label class="text-marriage">Độc thân</label><br>
                     </div>
                     <div class="option">
-                        <input class="button-radio" type="radio" name="marriage" value="Đã kết hôn"><label class="text-marriage">Đã kết hôn</label><br>
+                        <div class="css-radio-button-unchecked">
+                            <input class="button-radio" type="radio" name="marriage" value="Đã kết hôn">
+                        </div>
+                        <label class="text-marriage">Đã kết hôn</label><br>
                     </div>
                 </div>
             </div>

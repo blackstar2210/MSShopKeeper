@@ -53,7 +53,7 @@
     padding: 12px 12px 0 12px;
 }
 
-.row-top{
+.row-top {
     width: 100%;
     height: 166px;
     display: flex;
@@ -67,7 +67,7 @@
 .code {
     display: flex;
     width: 100%;
-    height:35px;
+    height: 35px;
 }
 
 .code-text {
@@ -97,7 +97,7 @@
 .image-text {
     width: 230px;
     padding-top: 8px;
-    padding-left:5px;
+    padding-left: 5px;
 }
 
 .label-image {
@@ -116,8 +116,8 @@
 }
 
 .icon-image {
-    width:100%;
-    height:116px;
+    width: 100%;
+    height: 116px;
 }
 
 .button-image {
@@ -135,14 +135,14 @@
 }
 
 .role {
-    height: 37px;
-    width:100%;
+    /*height: 37px;*/
+    width: 100%;
     display: flex;
 }
 
 .role-text {
     width: 150px;
-    height:100%;
+    height: 100%;
     padding: 8px 5px 0 0;
     border: none;
     outline: none;
@@ -155,15 +155,15 @@
     border: 1px solid #d0d0d0;
     -webkit-border-radius: 3px;
     cursor: pointer;
-    padding:0 0 0 5px;
+    padding: 0 0 0 5px;
 }
 
 .role-select {
     display: flex;
     width: 585px;
-    /*width: 555px;*/ 
+    /*width: 555px;*/
     min-height: 35px;
-
+    padding: 4px 0;
 }
 
 .input-select {
@@ -199,28 +199,29 @@
     background-image: url('/Contents/Icons/exclamation.png');
     background-repeat: no-repeat;
     background-position: 4px 10px;
-    display:none;
+    display: none;
 }
 
 .selected {
-    height:31px;
+    /*height:31px;*/
     padding: 0;
     margin: 0;
-    display: flex;
-    list-style-type:none;
+    display: block;
+    padding-top: 2px;
+    list-style-type: none;
     width: auto;
 }
 
     .selected li {
-        height:24px;
+        height: 24px;
         background-color: #026b97;
         color: #fff;
-        margin: 5px 3px 0 0;
+        margin: 0 3px 0 0;
         border: 1px solid #ececec;
         -webkit-border-radius: 3px;
-        position:relative;
+        /*position:relative;*/
         padding: 2px 5px;
-        display:flex;
+        display: inline-flex;
     }
 
 .icon-close {
@@ -247,24 +248,25 @@
     display: none;
 }
 
-    .dropdown-select ul{
+    .dropdown-select ul {
         padding: 0;
         margin: 0;
     }
 
-    .dropdown-select ul li {
-        padding: 0 6px;
-        font: normal 13px Roboto;
-        line-height: 22px;
-        cursor: pointer;
-        border-width: 1px;
-        border-style: none;
-        border-color: #fff;
-    }
-        .dropdown-select ul li:hover {
-            background-color: #247ba0;
-            color: #fff;
+        .dropdown-select ul li {
+            padding: 0 6px;
+            font: normal 13px Roboto;
+            line-height: 22px;
+            cursor: pointer;
+            border-width: 1px;
+            border-style: none;
+            border-color: #fff;
         }
+
+            .dropdown-select ul li:hover {
+                background-color: #247ba0;
+                color: #fff;
+            }
 
 
 .allow {
@@ -272,14 +274,14 @@
     height: 32px;
     margin-top: 4px;
     padding-left: 150px;
-    padding-top:8px;
+    padding-top: 8px;
     display: flex;
 }
 
 .checkbox {
     width: 18px;
     height: 18px;
-    margin-right:4px;
+    margin-right: 4px;
     background-image: url('/Contents/Icons/check.png');
 }
 
@@ -287,7 +289,7 @@
     width: 100%;
     height: 35px;
     margin-top: 8px;
-    display:flex;
+    display: flex;
 }
 
 .text-pass {
@@ -341,7 +343,7 @@
 }
 
 .evaluate-pass {
-    width:233px; 
+    width: 233px;
     height: 21px;
     color: #f44336;
     border-bottom: 4px solid #f44336;
@@ -423,7 +425,7 @@
     background: #fff;
     position: absolute;
     left: 162px;
-    top: 460px;
+    top: 461px;
     display: none;
 }
 
@@ -462,6 +464,18 @@
     align-items: center;
 }
 
+.css-radio-button-checked {
+    background-image: url('/Contents/Icons/radio-check.png');
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+}
+
+.css-radio-button-unchecked {
+    background-image: url('/Contents/Icons/radio-uncheck.png');
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+}
+
 .text-marriage {
     font-family: Roboto !important;
     margin-left: 6px;
@@ -472,7 +486,7 @@
 .button-radio {
     width: 18px;
     height: 18px;
+    opacity: 0;
     /*background-image: url('/Contents/Icons/radio-check.png');
     background-repeat: no-repeat*/
 }
-
