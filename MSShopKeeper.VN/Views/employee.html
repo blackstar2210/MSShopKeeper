@@ -385,7 +385,7 @@
     </div>
 
     <!-- Tạo Dialog-->
-    <div class="dialogEmployeeDetail disable-bracken" title="Thêm mới nhân viên">
+    <div class="dialogEmployeeDetail disable-bracken" title="Thêm mới nhân viên" id="dialogEmployeeDetail">
         <div class="header-dialog">
             <div class="header-item header-item-selected">Thông tin cơ bản</div>
             <div class="border-dialog"></div>
@@ -401,12 +401,14 @@
                 <div class="code-name">
                     <div class="code border-input">
                         <div class="code-text">Mã nhân viên <span style="color:red">*</span></div>
-                        <input class="code-input input-code change-border-input" type="text" value="NV00003">
+                        <input class="code-input input-code change-border-input" type="text" value="NV00003" required>
+                        <div class="select-warn" id="name-require"></div>
                     </div>
                     <label class="label-code border-input">Dùng làm tên đăng nhập vào hệ thống, có thể sử dụng số điện thoại hoặc email</label>
                     <div class="name code border-input">
                         <div class="code-text">Tên nhân viên <span style="color:red">*</span></div>
-                        <input class="code-input input-name change-border-input" type="text">
+                        <input class="code-input input-name change-border-input" type="text" required>
+                        <div class="select-warn" id="code-require"></div>
                     </div>
                 </div>
 
@@ -464,11 +466,13 @@
             <div class="user border-input">
                 <div class="text-pass">Mật khẩu <span style="color: red">*</span></div>
                 <div class="pass change-border-input">
-                    <input class="input-pass" type="password" placeholder="Ít nhất 8 ký tự" />
+                    <input class="input-pass" type="password" placeholder="Ít nhất 8 ký tự" isPass="true" required />
+                    <div class="select-warn" id="pass-require"></div>
                     <div class="icon-seen" style="cursor: pointer;"></div>
                 </div>
                 <div class="text-confirm">Xác nhận MK <span style="color:red">*</span></div>
-                <input class="input-confirm change-border-input" type="password" />
+                <input class="input-confirm change-border-input" type="password" required />
+                <div class="select-warn" id="confirm-require"></div>
             </div>
             <label class="evaluate-pass">Bảo mật yếu</label>
             <div class="rowID border-input">
@@ -476,8 +480,8 @@
                 <input type="text" class="input-id  change-border-input" />
                 <div class="text-date text-confirm">Ngày cấp</div>
                 <div class="date change-border-input">
-                    <input type="text" class="input-date" />
-                    <button class="button-filter-date" id="button-filter-date"></button>
+                    <input type="text" class="input-date" id="input-date-id"  placeholder="DD / MM / YYYY"/>
+                    <button class="button-filter-date" id="date-id"></button>
                 </div>
             </div>
             <div class="rowID border-input">
@@ -485,8 +489,8 @@
                 <input class="input-address input-id change-border-input" type="text" />
                 <div class="text-dob text-confirm">Ngày sinh</div>
                 <div class="date change-border-input">
-                    <input type="text" class="input-date" />
-                    <button class="button-filter-date" id="button-filter-date"></button>
+                    <input type="text" class="input-date" id="input-date-dob" placeholder="DD / MM / YYYY"/>
+                    <button class="button-filter-date" id="date-dob"></button>
                 </div>
             </div>
             <div class="rowID border-input">
@@ -508,21 +512,51 @@
                 <div class="text-marriage-title text-pass">Tình trạng hôn nhân</div>
                 <div class="marriage">
                     <div class="option">
-                        <div class="css-radio-button-checked">
-                            <input class="button-radio" type="radio" name="marriage" value="Độc thân" checked>
+                        <div class="css-radio-button-checked radio-button">
+                            <input class="button-radio" type="radio" name="marriage" value="Độc thân">
                         </div>
                         <label class="text-marriage">Độc thân</label><br>
                     </div>
                     <div class="option">
-                        <div class="css-radio-button-unchecked">
+                        <div class="css-radio-button-unchecked radio-button">
                             <input class="button-radio" type="radio" name="marriage" value="Đã kết hôn">
                         </div>
                         <label class="text-marriage">Đã kết hôn</label><br>
                     </div>
                 </div>
+                <div class="text-gender">Giới tính</div>
+                <div class="gender">
+                    <div class="option">
+                        <div class="css-radio-button-checked radio-button-gender">
+                            <input class="button-radio" type="radio" name="gender" value="Nam">
+                        </div>
+                        <label class="text-marriage">Nam</label><br>
+                    </div>
+                    <div class="option">
+                        <div class="css-radio-button-unchecked radio-button-gender">
+                            <input class="button-radio" type="radio" name="gender" value="Nữ">
+                        </div>
+                        <label class="text-marriage">Nữ</label><br>
+                    </div>
+                </div>
             </div>
-            <div class="gender">
-
+        </div>
+        <div class="footer-diaolog">
+            <div class="left-footer">
+                <div class="help-icon" style="background-position: 0 20px; height: 60px; margin-left: 8px;"></div>
+                <div class="text-help">Trợ giúp</div>
+            </div>
+            <div class="btn btn-save">
+                <div class="icon-dialog icon-save"></div>
+                <div class="text text-save">Lưu</div>
+            </div>
+            <div class="btn btn-create">
+                <div class="icon-dialog icon-create"></div>
+                <div class="text text-create">Lưu và thêm mới</div>
+            </div>
+            <div class="btn btn-close">
+                <div class="icon-dialog icon-close-dialog"></div>
+                <div class="text text-close">Hủy bỏ</div>
             </div>
         </div>
     </div>

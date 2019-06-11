@@ -17,8 +17,8 @@ $(document).ready(function () {
         width: 820,
         height: 760,
         autoOpen: false,
-        closeOnEscape: false,
-        modal: true,
+        closeOnEscape: true,
+        modal: true
     })
 
     // Gán Events:
@@ -180,6 +180,10 @@ class employeeJs extends base {
         $('.checkbox').on('click', this.handleButtonAllow);
         $('.icon-seen').on('click', this.handleSeen);
         $('.select-status').on('click', this.showDropdownStatus);
+        $('.item-select-status').on('click', this.changeStatus);
+        $('.radio-button').on('click', this.changeRadioButton);
+        $('.radio-button-gender').on('click', this.changeRadioButtonGender);
+        $(document).on('blur', '#dialogEmployeeDetail [required]', this.showBlur);
         $(document).on('click', this.hideAllDropDown);
     }
 
@@ -198,6 +202,18 @@ class employeeJs extends base {
         //    showFilter = 0;
         //}
         
+    }
+
+    showBlur() {
+        var value = $(this).val();
+        if (!value) {
+            if ($(this).attr('isPass') === "true") {
+                $(this).parent('.change-border-input').addClass('input-selected');
+            }
+            else {
+                $(this).addClass('input-selected');
+            }
+        }
     }
 
     hideAllDropDown(event) {
@@ -294,6 +310,13 @@ class employeeJs extends base {
         currentMenu.toggle();
     }
 
+    changeStatus() {
+        var value = $(this).text();
+        var container = $(this).parents('.rowID');
+        var input = container.find('.input-status');
+        input.val(value);
+    }
+
     changeBoderInput() {
         $(this).css('border', '1px solid #247ba0');
         $('.change-border-input').not($(this)).css('border', '');
@@ -322,11 +345,37 @@ class employeeJs extends base {
         }
     }
 
-    showDropdownStatus() {
+    changeRadioButton() {
+        $(this).css("background-image", "url('/Contents/Icons/radio-check.png')");
+        $('.radio-button').not($(this)).css("background-image", "url('/Contents/Icons/radio-uncheck.png')");
+    }
 
+    changeRadioButtonGender() {
+        $(this).css("background-image", "url('/Contents/Icons/radio-check.png')");
+        $('.radio-button-gender').not($(this)).css("background-image", "url('/Contents/Icons/radio-uncheck.png')");
     }
 
 }
+
+$("#input-date-id").datepicker({
+    inline: true,
+    showOtherMonths: true,
+    showOn: "button"
+});
+
+$("#date-id").on('click', function () {
+    $(this).prev().trigger('click');
+});
+
+$("#input-date-dob").datepicker({
+    inline: true,
+    showOtherMonths: true,
+    showOn: "button"
+});
+
+$("#date-dob").on('click', function () {
+    $(this).prev().trigger('click');
+});
 
 //Datepicker khi click vào icon date
 $("#text-filter").datepicker({

@@ -490,3 +490,90 @@
     /*background-image: url('/Contents/Icons/radio-check.png');
     background-repeat: no-repeat*/
 }
+
+.text-gender {
+    width: 120px;
+    height: 100%;
+    padding: 8px 5px 0 0;
+    margin-left: 15px;
+}
+
+.gender {
+    width: 235px;
+    height: 32px;
+    display: flex;
+}
+
+.footer-diaolog {
+    position: absolute;
+    bottom: 1px;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    color: #026b97;
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+}
+
+.left-footer {
+    display: flex;
+    height: 100%;
+    width: 150px;
+}
+
+.text-help {
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+.btn{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+    position: absolute;
+    margin-top: 8px;
+    border: 1px solid #026b97;
+    -webkit-border-radius: 3px;
+}
+
+.btn-save {
+    right: 270px;
+}
+
+.btn-create {
+    right: 110px;
+}
+
+.btn-close{
+    right: 20px;
+    border: none;
+}
+
+.icon-dialog {
+    height: 100%;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-save {
+    background-image: url('/Contents/Icons/notify-18.png');
+}
+
+.icon-create {
+    background-image: url('/Contents/Icons/radio-check.png');
+}
+
+.icon-close-dialog {
+    background-image: url('/Contents/Icons/radio-check.png');
+}
+
+.text {
+    padding-left: 8px;
+    font-weight: 600;
+}
+
+.input-selected {
+    border: 1px solid red;
+}
